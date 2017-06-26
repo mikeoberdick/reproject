@@ -43,6 +43,17 @@ body {
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
 
+.utilityHeader {
+	a {
+		color: #000000;
+		font-size: 12px;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
 #navbarNavDropdown {
 	justify-content: flex-end;
 }
@@ -143,6 +154,10 @@ body {
 		&:hover {
 			text-decoration: none;
 		}
+	}
+
+	.d4tw {
+		font-size: 12px;
 	}
 }
 
