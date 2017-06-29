@@ -56,7 +56,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<span>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></span><br />
 					<a href="<?php echo bloginfo('url'); ?>/privacy">Privacy </a>|
 					<a href="<?php echo bloginfo('url'); ?>/terms">Terms</a><br />
-					<span class = "d-block mt-2 d4tw">Website by <a href = "http://www.designs4theweb.com">Designs 4 The Web</a></span>
+					<span class = "d-block mt-1 d4tw">Website by <a href = "http://www.designs4theweb.com">Designs 4 The Web</a></span>
 
 					</div><!-- .site-info -->
 
