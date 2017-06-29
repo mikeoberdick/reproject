@@ -34,6 +34,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="hfeed site" id="page">
 
+<div class="container">
+	<div class="utilityHeader mt-3 text-right">
+		<a href="<?php echo bloginfo('url'); ?>/contact">Contact</a> |
+		<a href="<?php echo bloginfo('url'); ?>/about">About</a> |
+		<a href="<?php echo bloginfo('url'); ?>/partnerships">Partnerships</a><br />
+		<p>Call: <a href = "tel:2035840741">(203) 584-0741</a></p>
+	</div><!-- .utilityHeader text-right -->
+</div><!-- .container -->
+
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 
@@ -62,6 +71,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
 				); ?>
+
+				<a href="<?php echo bloginfo('url'); ?>/free-assessment"><button type="button" class="btn btn-primary">Free Assessment</button></a><!-- .col-sm-12 col-md-6 -->
 
 			</div><!-- .container -->
 
