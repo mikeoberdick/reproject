@@ -35,9 +35,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="hfeed site" id="page">
 
 <div class="container">
-	<div class="utilityHeader text-right">
+	<div class="utilityHeader mt-3 text-right">
 		<a href="<?php echo bloginfo('url'); ?>/contact">Contact</a> |
-		<a href="<?php echo bloginfo('url'); ?>/about">About</a>
+		<a href="<?php echo bloginfo('url'); ?>/about">About</a> |
+		<a href="<?php echo bloginfo('url'); ?>/partnerships">Partnerships</a><br />
+		<p>Call: <a href = "tel:2035840741">(203) 584-0741</a></p>
 	</div><!-- .utilityHeader text-right -->
 </div><!-- .container -->
 
