@@ -25,6 +25,34 @@ get_header();
 					get_template_part( 'template-parts/content', 'home' );
 			}
 
+			else if( is_page( 'about' ) ) {
+					get_template_part( 'template-parts/content', 'about' );
+			}
+
+			else if( is_page( 'client-log-in' ) ) {
+					get_template_part( 'template-parts/content', 'client' );
+			}
+
+			else if( is_page( 'contact' ) ) {
+					get_template_part( 'template-parts/content', 'contact' );
+			}
+
+			else if( is_page( 'partnerships' ) ) {
+					get_template_part( 'template-parts/content', 'partnerships' );
+			}
+
+			else if( is_page( 'privacy' ) ) {
+					get_template_part( 'template-parts/content', 'privacy' );
+			}
+
+			else if( is_page( 'services' ) ) {
+					get_template_part( 'template-parts/content', 'services' );
+			}
+
+			else if( is_page( 'Candidates' ) ) {
+					get_template_part( 'template-parts/content', 'terms' );
+			}
+
 			else {
 			   get_template_part( 'loop-templates/content', 'page' );
 			}
