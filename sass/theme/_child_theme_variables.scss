@@ -7,12 +7,15 @@
 
 //Colors
 
-$brand-primary:     #9bbd8a; // Green
-$brand-secondary:		#000000; // Brand Secondary Color
-$brand-tertiary:		#ff0000; // Brand Tertiary Color
+$brand-primary:     #003E00; // Green
+$brand-secondary:		#468A01; // Light Green
 
-$header-font:           'nunito', sans-serif; // Nunito
-$body-font:             'Open Sans', sans-serif; // Open Sans
+$header-color:      $brand-primary; // Header Font Color
+$body-color:        #000000; // Body Font Color
+
+$body-font:         'Droid Sans', sans-serif; // Open Sans
+$header-font:       'Roboto', sans-serif; // Roboto
+
 
 //Fluid Typography Variables
 $min_width: 320px;

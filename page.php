@@ -25,13 +25,15 @@ get_header();
 					get_template_part( 'template-parts/content', 'home' );
 			}
 
-			else if( is_page( 'about' ) ) {
-					get_template_part( 'template-parts/content', 'about' );
+			else if( is_page( 'services' ) ) {
+					get_template_part( 'template-parts/content', 'services' );
 			}
 
-			else if( is_page( 'client-log-in' ) ) {
-					get_template_part( 'template-parts/content', 'client' );
+			else if( is_page( 'free-assessment' ) ) {
+					get_template_part( 'template-parts/content', 'assessment' );
 			}
+
+			
 
 			else if( is_page( 'contact' ) ) {
 					get_template_part( 'template-parts/content', 'contact' );

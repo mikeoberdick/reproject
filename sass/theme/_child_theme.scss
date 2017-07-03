@@ -35,9 +35,33 @@ h3 {
 }
 
 body {
-	color: #b2b2b2;
+	color: $body-color;
 	font-family: $body-font;
 }
+
+/*------------------------------------------------*/
+/*--------------------[LINKS]---------------------*/
+/*------------------------------------------------*/
+
+/*------------------------------------------------*/
+/*-------------------[BUTTONS]--------------------*/
+/*------------------------------------------------*/
+
+.btn-primary {
+		font-family: $body-font;
+		text-transform: uppercase;
+	    color: #fff !important;
+	    background-color: $brand-primary !important;
+	    border-color: $brand-primary !important;
+	    @include border-radius(5px);
+}
+			
+.btn-primary {
+	&:hover {
+	    background-color: lighten( $brand-primary, 10% ) !important;
+		border-color: $brand-primary !important;
+   	}
+  }
 
 /*------------------------------------------------*/
 /*--------------------[HEADER]--------------------*/
@@ -53,6 +77,10 @@ body {
 		&:hover {
 			text-decoration: none;
 		}
+	}
+
+	p {
+		margin-bottom: 0;
 	}
 }
 
@@ -72,6 +100,86 @@ body {
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
 
+//HOME
+
+#homepage {
+	.heroButtons {
+		button {
+			width: 100%;
+		}
+	}
+
+	.homepageCards {
+		.hpCard {
+			width: 100%;
+			border: solid 2px $brand-primary;
+		    border-radius: 5px;
+		    padding: 15px;
+		    text-align: center;
+
+		    i {
+				font-size: 48px;
+				color: $brand-secondary;
+			}
+
+			h3 {
+				text-transform: uppercase;
+			}
+
+			ul {
+				list-style: none;
+				padding-left: 0;
+
+				li {
+					ul {
+						padding-left: 20px;
+					}
+				}
+
+			i {
+				font-size: 24px;
+				font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+//SERVICES
+
+#services {
+	.card {
+		border-color: $brand-primary;
+
+		.card-header {
+			background-color: $brand-secondary;
+
+			h3 {
+				color: #ffffff;
+			}
+		}
+
+		.card-block {
+			ul {
+				list-style: none;
+				padding-left: 0;
+
+				li {
+					margin-bottom: 10px;
+
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+
+					i {
+						color: $brand-secondary;
+					}
+				}
+			}
+		}
+	}
+}
+
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
@@ -81,24 +189,44 @@ body {
 /*------------------------------------------------*/
 /*--------------------[FORMS]-------------------*/
 /*------------------------------------------------*/
-.nf-form-content input[type="submit"],
-.nf-form-content input[type="button"],
-.nf-form-content button {
-			font-family: $body-font;
-			text-transform: uppercase;
-		    color: #fff !important;
-		    background-color: $brand-primary !important;
-		    border-color: $brand-primary !important;
-		    @include border-radius(5px);
+#freeAssessment {
+	.nf-form-fields-required {
+		display: none;
+	}
 
-		    &:hover {
-		    	background-color: #002132 !important;
-		    	border-color: #001a28 !important;
-			}
-}
+	.fName {
+		float: left;
+		width: 48%;
+		margin-right: 2%;
+		clear: none;
 
-.progress-bar {
-	background-color: $brand-primary;
+		@include media-breakpoint-down(md) { float: none; width: 100%; margin-right: 0; clear: both; }
+	}
+
+	.lName {
+		float: left;
+		width: 48%;
+		clear: none;
+
+		@include media-breakpoint-down(md) { float: none; width: 100%; clear: both; }
+	}
+
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  font-family: $header-font;
+	  font-size: 12px;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  font-family: $header-font;
+	  font-size: 12px;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	 font-family: $header-font;
+	 font-size: 12px;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  font-family: $header-font;
+	  font-size: 12px;
+	}
 }
 
 

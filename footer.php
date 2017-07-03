@@ -43,34 +43,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<?php } ?>
 
-	<div id = "bottomFooter" class = "container-fluid">
+	<footer id = "bottomFooter" class = "site-footer container-fluid">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-6 site-info">
+				<span>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></span>
+			</div>
+
+			<div class="col-md-6 site-info text-right">
+				<a href="<?php echo bloginfo('url'); ?>/privacy">Privacy </a>|<a href="<?php echo bloginfo('url'); ?>/terms"> Terms</a>
+			</div>
+		</div><!-- .row -->
 
 		<div class="row">
-
-			<div class="col-md-12">
-
-				<footer class="site-footer text-center" id="colophon">
-
-					<div class="site-info">
-					
-					<span>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></span><br />
-					<a href="<?php echo bloginfo('url'); ?>/privacy">Privacy </a>|
-					<a href="<?php echo bloginfo('url'); ?>/terms">Terms</a><br />
-					<span class = "d-block mt-1 d4tw">Website by <a href = "http://www.designs4theweb.com">Designs 4 The Web</a></span>
-
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- .container-fluid -->
+			<div class="col-sm-12 text-center">
+				<span class = "d-block mt-1 d4tw">Website by <a href = "http://www.designs4theweb.com">Designs 4 The Web</a></span>
+			</div>
+		</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
 
 </div><!-- wrapper end -->
-
-</div><!-- #page-wrapper -->
 
 <?php wp_footer(); ?>
 
