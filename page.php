@@ -33,26 +33,8 @@ get_header();
 					get_template_part( 'template-parts/content', 'assessment' );
 			}
 
-			
-
-			else if( is_page( 'contact' ) ) {
-					get_template_part( 'template-parts/content', 'contact' );
-			}
-
-			else if( is_page( 'partnerships' ) ) {
-					get_template_part( 'template-parts/content', 'partnerships' );
-			}
-
-			else if( is_page( 'privacy' ) ) {
-					get_template_part( 'template-parts/content', 'privacy' );
-			}
-
-			else if( is_page( 'services' ) ) {
-					get_template_part( 'template-parts/content', 'services' );
-			}
-
-			else if( is_page( 'Candidates' ) ) {
-					get_template_part( 'template-parts/content', 'terms' );
+			else if( is_page( 'client-log-in' ) ) {
+					get_template_part( 'template-parts/content', 'login' );
 			}
 
 			else {
