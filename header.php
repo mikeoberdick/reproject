@@ -34,16 +34,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="hfeed site" id="page">
 
-<div class="container">
-	<div class="utilityHeader mt-3 text-right">
-		<a href="<?php echo bloginfo('url'); ?>/contact">Contact</a> |
-		<a href="<?php echo bloginfo('url'); ?>/about">About</a> |
-		<a href="<?php echo bloginfo('url'); ?>/partnerships">Partnerships</a><br />
-		<p>Call: <a href = "tel:2035840741">(203) 584-0741</a></p>
-	</div><!-- .utilityHeader text-right -->
-</div><!-- .container -->
+	<div class="container">
 
-	<!-- ******************* The Navbar Area ******************* -->
+		<div class="row headerArea">
+
+
+
+			<div class="col-sm-12 col-md-3 logoContainer">
+				<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name') ); ?>"><img id = "headerLogo" src = "<?php the_field('logo', 'option'); ?>"></a>
+			</div><!-- logo -->
+
+			<div class="col-sm-12 col-md-9">
+
+				<div class="utilityHeader mt-3 mb-3 text-right hidden-md-down">
+					<a href="<?php echo bloginfo('url'); ?>/contact">Contact</a> |
+					<a href="<?php echo bloginfo('url'); ?>/about">About</a> |
+					<a href="<?php echo bloginfo('url'); ?>/partnerships">Partnerships</a><br />
+					<p>Call: <a href = "tel:2035840741">(203) 584-0741</a></p>
+				</div><!-- .utilityHeader -->
+
+				<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
@@ -51,13 +61,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<nav class="navbar navbar-toggleable-md">
 
-			<div class="container">
+			<!-- <div class="container"> -->
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class = "mobileToggle"><i class="fa fa-bars" aria-hidden="true"></i> Menu</span>
 				</button>
 					
-					<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name') ); ?>"><img id = "headerLogo" src = "<?php the_field('logo', 'option'); ?>"></a>
+					
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
@@ -73,9 +83,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 				); ?>
 
 				<a href="<?php echo bloginfo('url'); ?>/free-assessment"><button type="button" class="btn btn-primary">Free Assessment</button></a><!-- .col-sm-12 col-md-6 -->
+			</nav><!-- .site-navigation -->
+	</div><!-- .wrapper-navbar end -->
+
+			</div><!-- .col-med-9 -->
+
+
+		</div><!-- .row -->
+	<!-- </div>.container -->
 
 			</div><!-- .container -->
 
-		</nav><!-- .site-navigation -->
+		
 
-	</div><!-- .wrapper-navbar end -->
+	

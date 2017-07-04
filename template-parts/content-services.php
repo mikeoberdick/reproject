@@ -1,5 +1,10 @@
 <div id="services">
 	<div class="container">
+
+	<header class="entry-header">
+		<?php the_title( '<h1 class="entry-title mb-3">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
+
 		<div class = "row">
 			
 			<div class="col-sm-12 col-md-4">
@@ -92,8 +97,8 @@
 						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Project portfolio alignment</li><!-- .list-group-item -->
 						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Resource pool model development</li><!-- .list-group-item -->
 						<li><i class="fa fa-caret-right" aria-hidden="true"></i> R&PPM analysis with scenarios</li><!-- .list-group-item -->
-						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Sustaining R&PPM practice development, including...</li><!-- .list-group-item -->
-							<ul>
+						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Sustaining R&PPM practice development, including:</li><!-- .list-group-item -->
+							<ul class = "pl-3">
 								<li><i class="fa fa-star" aria-hidden="true"></i> Process and system integration mapping</li>
 								<li><i class="fa fa-star" aria-hidden="true"></i> Tools and templates</li>
 								<li><i class="fa fa-star" aria-hidden="true"></i> Training</li>
@@ -108,7 +113,10 @@
 
 		<div class="row mt-5">
 			<div class="col-sm-12 text-center">
-				<a href = '#' alt = "" title = ""><button type="button" class="learnMore btn btn-outline-primary btn-lg"><i class="fa fa-play-circle" aria-hidden="true"></i> Learn More</button></a>
+				<a href="#" data-featherlight="#servicesVideo" alt = "" title = ""><button type="button" class="learnMore btn btn-outline-primary btn-lg"><i class="fa fa-play-circle" aria-hidden="true"></i> Learn More</button></a>
+					<div id="servicesVideo" class = "hidden">
+						Services Video Here
+					</div>
 			</div><!-- .col-sm-12 text-center -->
 		</div><!-- .row -->
 	</div><!-- .container -->

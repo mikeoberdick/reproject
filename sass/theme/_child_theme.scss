@@ -43,6 +43,10 @@ body {
 /*--------------------[LINKS]---------------------*/
 /*------------------------------------------------*/
 
+.hidden {
+	display: none;
+}
+
 /*------------------------------------------------*/
 /*-------------------[BUTTONS]--------------------*/
 /*------------------------------------------------*/
@@ -67,34 +71,71 @@ body {
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
 
-.utilityHeader {
-		color: #000000;
-		font-size: 12px;
-	a {
-		color: #000000;
-		font-size: 12px;
+.headerArea {
+	align-items: center;
 
-		&:hover {
-			text-decoration: none;
+	.logoContainer {
+		align-self: flex-end;
+	}
+
+	.utilityHeader {
+			color: #000000;
+			font-size: 12px;
+		a {
+			color: #000000;
+			font-size: 12px;
+
+			&:hover {
+				text-decoration: none;
+				}
+			}
+
+		p {
+			margin-bottom: 0;
+			}
 		}
-	}
-
-	p {
-		margin-bottom: 0;
-	}
 }
 
-#navbarNavDropdown {
-	justify-content: flex-end;
-}
 
 /*------------------------------------------------*/
 /*-------------------[MENU]-----------------------*/
 /*------------------------------------------------*/
 
+.navbar {
+	padding: 0;
+
+#navbarNavDropdown {
+	justify-content: flex-end;
+
+	a {
+		color: $brand-secondary;
+
+		&:hover {
+			color: $brand-primary;
+			font-weight: bold;
+			}
+	}
+
+	.current_page_item {
+		a {
+			color: $brand-primary;
+			font-weight: bold;
+			}
+	}
+
+	.current_page_parent {
+		a {
+			color: $brand-primary;
+			font-weight: bold;
+			}
+		}
+	}
+
 .mobileToggle {
 	color: $brand-primary;
+	}	
 }
+
 
 /*------------------------------------------------*/
 /*----------------------[PAGES]-------------------*/
