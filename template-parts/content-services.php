@@ -1,9 +1,13 @@
 <div id="services">
 	<div class="container">
-
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title mb-3">', '</h1>' ); ?>
+		<h1 class="entry-title">How We Can Help</h1>
+			<div>
+	    		<span class="titleSep"></span>
+			</div>
 	</header><!-- .entry-header -->
+
+	
 
 		<div class = "row">
 			

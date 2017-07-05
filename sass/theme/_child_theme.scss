@@ -17,7 +17,7 @@ html {
 }
 
 h1, h2, h3, h4, h5 {
-	color: $brand-primary;
+	color: $header-color;
 	font-family: $header-font;
 }
 
@@ -53,7 +53,7 @@ body {
 
 .btn-primary {
 		font-family: $body-font;
-		text-transform: uppercase;
+		text-transform: capitalize;
 	    color: #fff !important;
 	    background-color: $brand-primary !important;
 	    border-color: $brand-primary !important;
@@ -71,29 +71,35 @@ body {
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
 
-.headerArea {
-	align-items: center;
+#headerWrap {
+	@include shadow;
+	padding-bottom: 25px;
+	margin-bottom: 15px;
 
-	.logoContainer {
-		align-self: flex-end;
-	}
+	.headerArea {
+		align-items: center;
 
-	.utilityHeader {
-			color: #000000;
-			font-size: 12px;
-		a {
-			color: #000000;
-			font-size: 12px;
+		.logoContainer {
+			align-self: flex-end;
+		}
 
-			&:hover {
-				text-decoration: none;
+		.utilityHeader {
+				color: #000000;
+				font-size: 12px;
+			a {
+				color: #000000;
+				font-size: 12px;
+
+				&:hover {
+					text-decoration: none;
+					}
+				}
+
+			p {
+				margin-bottom: 0;
 				}
 			}
-
-		p {
-			margin-bottom: 0;
-			}
-		}
+	}
 }
 
 
@@ -141,45 +147,64 @@ body {
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
 
+
+.entry-header {
+	.entry-title {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.titleSep {
+		display:block;
+	    border:none;
+	    color:white;
+	    height:1px;
+	    background: $brand-secondary;
+	    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from($brand-secondary), to(#fff));
+	    margin-bottom: 25px;
+	    margin-bottom: 25px;
+	}
+}
+
 //HOME
 
 #homepage {
-	.heroButtons {
-		button {
-			width: 100%;
-		}
+	.heroWrapper {
+		padding: 50px;
+
+		.heroContent {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+
+			.heroButtons {
+					button {
+						width: 100%;
+					}
+				}		
+		}		
 	}
 
 	.homepageCards {
 		.hpCard {
 			width: 100%;
-			border: solid 2px $brand-primary;
-		    border-radius: 5px;
-		    padding: 15px;
-		    text-align: center;
 
-		    i {
-				font-size: 48px;
-				color: $brand-secondary;
+			h2 {
+				text-align: center;
 			}
 
-			h3 {
-				text-transform: uppercase;
+		    i {
+				font-size: 96px;
+				color: $brand-secondary;
 			}
 
 			ul {
 				list-style: none;
 				padding-left: 0;
 
-				li {
-					ul {
-						padding-left: 20px;
-					}
-				}
-
-			i {
-				font-size: 24px;
-				font-weight: bold;
+				i {
+					font-size: 8px;
+					vertical-align: middle;
 				}
 			}
 		}
@@ -221,6 +246,16 @@ body {
 	}
 }
 
+//FREE ASSESSMENT
+
+#privacyNote {
+	font-size: 12px;
+
+	span {
+		color: red;
+	}
+}
+
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
@@ -231,9 +266,6 @@ body {
 /*--------------------[FORMS]-------------------*/
 /*------------------------------------------------*/
 #freeAssessment {
-	.nf-form-fields-required {
-		display: none;
-	}
 
 	.fName {
 		float: left;
