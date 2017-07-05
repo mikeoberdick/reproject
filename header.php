@@ -34,24 +34,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="hfeed site" id="page">
 
-	<div class="container">
+	<div id = "headerWrap" class="container-fluid">
+		<div class="container">
+			<div class="row headerArea">
 
-		<div class="row headerArea">
+				<div class="col-sm-12 col-md-3 logoContainer">
+					<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name') ); ?>"><img id = "headerLogo" src = "<?php the_field('logo', 'option'); ?>"></a>
+				</div><!-- logo -->
 
+				<div class="col-sm-12 col-md-9">
 
-
-			<div class="col-sm-12 col-md-3 logoContainer">
-				<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name') ); ?>"><img id = "headerLogo" src = "<?php the_field('logo', 'option'); ?>"></a>
-			</div><!-- logo -->
-
-			<div class="col-sm-12 col-md-9">
-
-				<div class="utilityHeader mt-3 mb-3 text-right hidden-md-down">
-					<a href="<?php echo bloginfo('url'); ?>/contact">Contact</a> |
-					<a href="<?php echo bloginfo('url'); ?>/about">About</a> |
-					<a href="<?php echo bloginfo('url'); ?>/partnerships">Partnerships</a><br />
-					<p>Call: <a href = "tel:2035840741">(203) 584-0741</a></p>
-				</div><!-- .utilityHeader -->
+					<div class="utilityHeader mt-3 mb-3 text-right hidden-md-down">
+						<a href="<?php echo bloginfo('url'); ?>/contact">Contact</a> |
+						<a href="<?php echo bloginfo('url'); ?>/about">About</a> |
+						<a href="<?php echo bloginfo('url'); ?>/partnerships">Partnerships</a><br />
+						<p>Call: <a href = "tel:2035840741">(203) 584-0741</a></p>
+					</div><!-- .utilityHeader -->
 
 				<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
@@ -82,7 +80,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				); ?>
 
-				<a href="<?php echo bloginfo('url'); ?>/free-assessment"><button type="button" class="btn btn-primary">Free Assessment</button></a><!-- .col-sm-12 col-md-6 -->
+				<a href="<?php echo bloginfo('url'); ?>/free-assessment"><button type="button" class="btn btn-primary">
+FREE Instant Assessment</button></a><!-- .col-sm-12 col-md-6 -->
 			</nav><!-- .site-navigation -->
 	</div><!-- .wrapper-navbar end -->
 
@@ -90,9 +89,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 		</div><!-- .row -->
-	<!-- </div>.container -->
-
-			</div><!-- .container -->
+	</div><!-- .container -->
+</div><!-- .container-fluid -->
 
 		
 
