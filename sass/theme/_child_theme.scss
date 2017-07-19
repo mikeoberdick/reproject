@@ -180,6 +180,8 @@ body {
 			.heroButtons {
 					button {
 						width: 100%;
+						padding-left: .5rem;
+						padding-right: .5rem;
 					}
 				}		
 		}		
@@ -189,8 +191,8 @@ body {
 		.hpCard {
 			width: 100%;
 
-			h2 {
-				text-align: center;
+			@include headings {
+    			text-align: center;
 			}
 
 		    i {
@@ -267,21 +269,14 @@ body {
 /*------------------------------------------------*/
 #freeAssessment {
 
-	.fName {
-		float: left;
-		width: 48%;
-		margin-right: 2%;
-		clear: none;
+	.email-container {
 
-		@include media-breakpoint-down(md) { float: none; width: 100%; margin-right: 0; clear: both; }
-	}
-
-	.lName {
-		float: left;
-		width: 48%;
-		clear: none;
-
-		@include media-breakpoint-down(md) { float: none; width: 100%; clear: both; }
+		&:before {
+			content: "*";
+			color: red;
+			position: absolute;
+			right: -15px;			
+			}
 	}
 
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -346,7 +341,7 @@ body {
 }
 
 #bottomFooter {
-	background-color: $brand-primary;
+	background-color: $brand-secondary;
 	color: #fff;
 	padding-top: 25px;
 	padding-bottom: 25px;
