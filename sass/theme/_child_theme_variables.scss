@@ -7,12 +7,12 @@
 
 //Colors
 
-$brand-primary:     #003E00; // Green
-$brand-secondary:		#468A01; // Light Green
-$brand-tertiary:    #83093a; // Purple
+$brand-primary:     rgb(139, 23, 51); // Maroon
+$brand-secondary:		rgb(32, 87, 34); // Green
+$brand-tertiary:    rgb(64, 64, 65); // Grey
 
-$header-color:      $brand-tertiary; // Header Font Color
-$body-color:        #000000; // Body Font Color
+$header-color:      $brand-primary; // Header Font Color
+$body-color:        $brand-tertiary; // Body Font Color
 
 $body-font:         'Droid Sans', sans-serif; // Open Sans
 $header-font:       'Roboto Condensed', sans-serif; // Roboto
@@ -33,6 +33,16 @@ $mod_2: 1.5; // desktop
 
 
 //Mix-Ins
+
+
+//All Headings
+
+@mixin headings {
+    h1, h2, h3,
+    h4, h5, h6 {
+        @content;
+    }
+}
 
 //Text Shadow
 @mixin text-shadow {
