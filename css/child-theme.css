@@ -9386,12 +9386,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end; }
+    #homepage .heroWrapper .heroContent #heroSubtitle {
+      color: black; }
     #homepage .heroWrapper .heroContent .heroButtons button {
       width: 100%;
       padding-left: .5rem;
       padding-right: .5rem; }
 
-#homepage .hpCardTitle h2 {
+#homepage .hpCardTitle h3 {
   color: black;
   text-align: center; }
 
@@ -9459,7 +9461,7 @@ body {
 /*---------------------[FOOTER]-------------------*/
 /*------------------------------------------------*/
 #wrapper-footer {
-  color: #174918;
+  color: #404041;
   padding-top: 0;
   padding-bottom: 0;
   text-transform: uppercase;

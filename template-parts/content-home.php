@@ -4,7 +4,7 @@
 		<div class = "row heroWrapper" style = "background-image: url('<?php echo $image['url']; ?>')">
 			<div class="col-sm-12 col-md-6 heroContent">
 				<h2 id = "heroTitle" class = "mb-3">The Missing Piece In Your Project Portfolio Management</h2>
-				<p id = "heroSubtitle" class = "mb-3">An effective resource management service to help youstreamline your project portfolio, align business units, & complete projects on time.</p>
+				<p id = "heroSubtitle" class = "mb-3">An effective resource management service to help you streamline your project portfolio, align business units, & complete projects on time.</p>
 
 				<div class="row heroButtons">
 					<div class="col-sm-12 col-md-7">
@@ -23,17 +23,17 @@
 			</div><!-- .col-sm-12 col-md-6 -->
 
 			<!--<div class="col-sm-12 col-md-6">
-				<img src="<?php //echo $image['url']; ?>" alt="Hero Image">
+				<img src="<?php echo $image['url']; ?>" alt="Hero Image">
 			</div><!-- .col-sm-12 col-md-6 -->
 		</div><!-- .row -->
 
 		<div class="row mt-5 hpCardTitle">
 			<div class="col-sm-12">
-				<h2>We understand you're...</h2>
+				<h3 class = "font-italic">We understand you're...</h3>
 			</div><!-- .col-sm-12 -->
 		</div><!-- .row -->
 
-		<div class="row mt-3">
+		<div class="row mt-5">
 			<div class="col-sm-12 col-md-4 d-flex">
 				<div class="hpCard">
 					<h3 class = "mb-3">In A Time Crunch</h3>
