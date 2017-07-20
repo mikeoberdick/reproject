@@ -114,7 +114,7 @@ body {
 	justify-content: flex-end;
 
 	a {
-		color: $brand-tertiary;
+		color: black;
 
 		&:hover {
 			color: $brand-primary;
@@ -190,28 +190,19 @@ body {
 		}		
 	}
 
-	.homepageCards {
-		.hpCard {
-			width: 100%;
+	.hpCardTitle {
+		h2 {
+			color: black;
+			text-align: center;
+		}
+	}
 
-			@include headings {
-    			text-align: center;
-			}
+	.hpCard {
+		width: 100%;
 
-		    i {
-				font-size: 96px;
-				color: $brand-secondary;
-			}
-
-			ul {
-				list-style: none;
-				padding-left: 0;
-
-				i {
-					font-size: 8px;
-					vertical-align: middle;
-				}
-			}
+		h3 {
+			font-weight: bold;
+			text-align: center;
 		}
 	}
 }
@@ -307,7 +298,7 @@ body {
 /*------------------------------------------------*/
 
 #wrapper-footer {
-	color: $brand-secondary;
+	color: #174918;
 	padding-top: 0;
 	padding-bottom: 0;
 	text-transform: uppercase;
