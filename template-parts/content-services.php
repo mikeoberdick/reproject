@@ -1,7 +1,7 @@
 <div id="services">
 	<div class="container">
 	<header class="entry-header">
-		<h1 class="entry-title">How We Can Help</h1>
+		<h1 class="entry-title">We Can Help You</h1>
 			<div>
 	    		<span class="titleSep"></span>
 			</div>
@@ -10,106 +10,77 @@
 	
 
 		<div class = "row">
-			
 			<div class="col-sm-12 col-md-4">
 				<div class="card">
 				  <div class="card-header">
 				    <h3 class="text-center">Today</h3>
 				  </div>
 				  <div class="card-block">
-				    <h4 class="card-title font-italic text-center">Free Assessments</h4>
+				    <h4 class="card-title text-center">FREE Instant Assessment</h4>
+				    <p class = "font-italic">Find out what effective resource management can do for your PPM practice today.</p>
 				   <ul>
-				    <li><i class="fa fa-check" aria-hidden="true"></i> Horizon-stepped assessments</li>
-				    <li><i class="fa fa-check" aria-hidden="true"></i> Plus a full project plan</li>
+				    <li><i class="fa fa-check" aria-hidden="true"></i> 10 Minutes</li>
+				    <li><i class="fa fa-check" aria-hidden="true"></i> 10 Questions</li>
+				    <li><i class="fa fa-check" aria-hidden="true"></i> Instant Analysis</li>
 				  </ul>
-					<table class="table table-responsive">
-					  <tbody>
-					    <tr>
-					      <td>Today<br />Now!</td>
-					      <td>
-							<ul>
-								<li>10 Questions - 10 Minutes</li>
-								<li>Immediate report</li>
-								<li>High-level view of the potential value of an R&PPM practice to you</li>
-							</ul>	
-					    </tr>
-					    <tr>
-					      <td>Demo</td>
-					      <td>
-					      	<ul>
-								<li>12 questions - 30 minutes</li>
-								<li>Report in 3 days</li>
-								<li>Potential value of our Demo program to you</li>
-							</ul>
-					      </td>
-					    </tr>
-					    <tr>
-					      <td>Practice</td>
-					      <td>
-							<ul>
-								<li>80 questions - 1-2 hours</li>
-								<li>Report in 1 week</li>
-								<li>Value of using your next big strategic initiative to drive a new R&PPM practice</li>
-							</ul>
-					      </td>
-					    </tr>
-					  </tbody>
-					</table>
 				  </div><!-- .card-block -->
 				</div><!-- .card -->
 			</div><!-- .col-md-4 -->
 
-						<div class="col-sm-12 col-md-4">
+			<div class="col-sm-12 col-md-4">
 				<div class="card">
 				  <div class="card-header">
 				    <h3 class="text-center">Tomorrow</h3>
 				  </div>
 				  <div class="card-block">
-				    <h4 class="card-title font-italic text-center">Demo Program</h4>
+				    <h4 class="card-title text-center">DEMO Program</h4>
+				    <p class = "font-italic">A fast 2 week evaluation fo your Top 10 projects.</p>
+				    <p>
+				    	Step 1:  Initial project assessment <br />
+				    	Step 2:  Discover full resource capacity, constraints, and opportunities<br />
+						Step 3:  Provide comprehensive reports*<br />
+						Step 4:  Evaluate our programs <span style = "text-decoration: underline;">real</span> value to you
+					</p>
+					<p>Reports Include:</p>
 				   <ul>
-				   <li><i class="fa fa-check" aria-hidden="true"></i> <span style = "text-decoration: underline;">Free</span> assessment on the program's potential value to you</li>
-				   <li><i class="fa fa-check" aria-hidden="true"></i> 12 questions in 30 minutes</li>
-				   <li><i class="fa fa-check" aria-hidden="true"></i> Report in 3 days</li>
+				 <li><i class="fa fa-check" aria-hidden="true"></i> Full Resource & Project Portfolio Management Analysis</li>
+				 <li><i class="fa fa-check" aria-hidden="true"></i> Heat Map Report</li>
+				 <li><i class="fa fa-check" aria-hidden="true"></i> Optimal Scenarios Report</li>
+				 <li><i class="fa fa-check" aria-hidden="true"></i> Possible Scenarios Report</li>
+				 <li><i class="fa fa-check" aria-hidden="true"></i> FULL Program Value Analysis</li>
 				  </ul>
-					<hr>
-					<ul>
-						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Top 10 projects</li><!-- .list-group-item -->
-						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Fast-paced 1-month project</li><!-- .list-group-item -->
-						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Only 15 hours of your team’s collective time</li><!-- .list-group-item -->
-						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Full R&PPM analysis with 2 suggested scenarios</li><!-- .list-group-item -->
-						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Sustainable practice value analysis</li><!-- .list-group-item -->
-						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Challenge your assumptions with your own data</li><!-- .list-group-item -->
-					</ul><!-- .list-group list-group-flush -->
 				  </div><!-- .card-block -->
 				</div><!-- .card -->
 			</div><!-- .col-md-4 -->
 
-						<div class="col-sm-12 col-md-4">
+			<div class="col-sm-12 col-md-4">
 				<div class="card">
 				  <div class="card-header">
 				    <h3 class="text-center">Future</h3>
 				  </div>
 				  <div class="card-block">
-				    <h4 class="card-title font-italic text-center">R&PPM Practice Assessments</h4>
+				    <h4 class="card-title text-center">FULL R&PPM Practice</h4>
+				    <p class = "font-italic">A fully functioning resource and project portfolio management practice in 90 days.</p>
+				    <p>Includes entire demo program PLUS...</p>
 				   <ul>
-				   <li><i class="fa fa-check" aria-hidden="true"></i> Free assessment on the program's potential value to you</li>
-				   <li><i class="fa fa-check" aria-hidden="true"></i> 80 questiosn in about 2 hours</li>
-				   <li><i class="fa fa-check" aria-hidden="true"></i> Report in 1 week</li>
-				  </ul>
-					<hr>
-					<ul>
-						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Project portfolio alignment</li><!-- .list-group-item -->
-						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Resource pool model development</li><!-- .list-group-item -->
-						<li><i class="fa fa-caret-right" aria-hidden="true"></i> R&PPM analysis with scenarios</li><!-- .list-group-item -->
-						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Sustaining R&PPM practice development, including:</li><!-- .list-group-item -->
-							<ul class = "pl-3">
-								<li><i class="fa fa-star" aria-hidden="true"></i> Process and system integration mapping</li>
-								<li><i class="fa fa-star" aria-hidden="true"></i> Tools and templates</li>
+				   <li><i class="fa fa-check" aria-hidden="true"></i> Unlimited project amount</li>
+				   <li><i class="fa fa-check" aria-hidden="true"></i> Unlimited scenario playouts</li>
+				   <li><i class="fa fa-check" aria-hidden="true"></i> Full Project portfolio alignment</li>
+				   <li><i class="fa fa-check" aria-hidden="true"></i> Resource pool development</li>
+				   <li><i class="fa fa-check" aria-hidden="true"></i> Resource pool analysis</li>
+				   <li><i class="fa fa-check" aria-hidden="true"></i> Tools ownerships</li>
+				   <li><i class="fa fa-check" aria-hidden="true"></i> Sustainability reports</li>
+				   <li><i class="fa fa-check" aria-hidden="true"></i> Sustainability support</li>
+				   <li><i class="fa fa-check" aria-hidden="true"></i> Ongoing support options</li>
+				   <ul class = "pl-3 pt-2">
+								<li><i class="fa fa-star" aria-hidden="true"></i> Customized to fit needs</li>
+								<li><i class="fa fa-star" aria-hidden="true"></i> Process mapping</li>
+								<li><i class="fa fa-star" aria-hidden="true"></i> System integration</li>
+								<li><i class="fa fa-star" aria-hidden="true"></i> Support tools</li>
+								<li><i class="fa fa-star" aria-hidden="true"></i> Custom templates</li>
 								<li><i class="fa fa-star" aria-hidden="true"></i> Training</li>
 							</ul>
-						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Ongoing support designed for client self sufficiency</li><!-- .list-group-item -->
-						<li><i class="fa fa-caret-right" aria-hidden="true"></i> Tools and guides ownership</li><!-- .list-group-item -->
-					</ul><!-- .list-group list-group-flush -->
+				  </ul>
 				  </div><!-- .card-block -->
 				</div><!-- .card -->
 			</div><!-- .col-md-4 -->

@@ -1,6 +1,7 @@
 <div id="homepage">
 	<div class="container">
-		<div class = "row heroWrapper" style = "background-image: url('<?php echo bloginfo('url'); ?>/wp-content/uploads/2017/07/hero_bg.png')">
+		<?php $image = get_field('hero_image'); ?>
+		<div class = "row heroWrapper" style = "background-image: url('<?php echo $image['url']; ?>')">
 			<div class="col-sm-12 col-md-6 heroContent">
 				<h2 id = "heroTitle" class = "mb-3">The Missing Piece In Your Project Portfolio Management</h2>
 				<p id = "heroSubtitle" class = "mb-3">An effective resource management service to help youstreamline your project portfolio, align business units, & complete projects on time.</p>
@@ -19,14 +20,14 @@
 				</div><!-- .row -->
 			</div><!-- .col-sm-12 col-md-6 -->
 
-			<!-- <div class="col-sm-12 col-md-6">
-				<img src="http://via.placeholder.com/600x300?text=Hero+Image" alt="Hero Image">
+			<!--<div class="col-sm-12 col-md-6">
+				<img src="<?php //echo $image['url']; ?>" alt="Hero Image">
 			</div><!-- .col-sm-12 col-md-6 -->
 		</div><!-- .row -->
 
 		<div class="row mt-5">
 			<div class="col-sm-12 text-center">
-				<h2>We Understand You're...</h2>
+				<h2 class = "font-italic">We understand you're...</h2>
 			</div><!-- .col-sm-12 -->
 		</div><!-- .row -->
 
