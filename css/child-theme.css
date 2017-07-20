@@ -9347,7 +9347,7 @@ body {
   .navbar #navbarNavDropdown {
     justify-content: flex-end; }
     .navbar #navbarNavDropdown a {
-      color: #404041; }
+      color: black; }
       .navbar #navbarNavDropdown a:hover {
         color: #8b1733;
         font-weight: bold; }
@@ -9391,20 +9391,15 @@ body {
       padding-left: .5rem;
       padding-right: .5rem; }
 
-#homepage .homepageCards .hpCard {
+#homepage .hpCardTitle h2 {
+  color: black;
+  text-align: center; }
+
+#homepage .hpCard {
   width: 100%; }
-  #homepage .homepageCards .hpCard h1, #homepage .homepageCards .hpCard h2, #homepage .homepageCards .hpCard h3,
-  #homepage .homepageCards .hpCard h4, #homepage .homepageCards .hpCard h5, #homepage .homepageCards .hpCard h6 {
+  #homepage .hpCard h3 {
+    font-weight: bold;
     text-align: center; }
-  #homepage .homepageCards .hpCard i {
-    font-size: 96px;
-    color: #205722; }
-  #homepage .homepageCards .hpCard ul {
-    list-style: none;
-    padding-left: 0; }
-    #homepage .homepageCards .hpCard ul i {
-      font-size: 8px;
-      vertical-align: middle; }
 
 #services .card {
   border-color: #8b1733; }
@@ -9464,7 +9459,7 @@ body {
 /*---------------------[FOOTER]-------------------*/
 /*------------------------------------------------*/
 #wrapper-footer {
-  color: #205722;
+  color: #174918;
   padding-top: 0;
   padding-bottom: 0;
   text-transform: uppercase;
