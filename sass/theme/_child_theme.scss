@@ -180,6 +180,10 @@ body {
 			flex-direction: column;
 			justify-content: flex-end;
 
+			#heroSubtitle {
+				color: black;
+			}
+
 			.heroButtons {
 					button {
 						width: 100%;
@@ -191,7 +195,7 @@ body {
 	}
 
 	.hpCardTitle {
-		h2 {
+		h3 {
 			color: black;
 			text-align: center;
 		}
@@ -298,7 +302,7 @@ body {
 /*------------------------------------------------*/
 
 #wrapper-footer {
-	color: #174918;
+	color: $brand-tertiary;
 	padding-top: 0;
 	padding-bottom: 0;
 	text-transform: uppercase;
