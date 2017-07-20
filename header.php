@@ -64,21 +64,34 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class = "mobileToggle"><i class="fa fa-bars" aria-hidden="true"></i> Menu</span>
 				</button>
-					
-					
 
-				<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'walker'          => new WP_Bootstrap_Navwalker(),
-					)
-				); ?>
+								<?php if ( is_user_logged_in () ) {
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'logged_in',
+							'container_class' => 'collapse navbar-collapse',
+							'container_id'    => 'navbarNavDropdown',
+							'menu_class'      => 'navbar-nav',
+							'fallback_cb'     => '',
+							'menu_id'         => 'main-menu',
+							'walker'          => new WP_Bootstrap_Navwalker(),
+						)
+					);
+				}
+
+				else if ( !is_user_logged_in () ) {
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'logged_out',
+							'container_class' => 'collapse navbar-collapse',
+							'container_id'    => 'navbarNavDropdown',
+							'menu_class'      => 'navbar-nav',
+							'fallback_cb'     => '',
+							'menu_id'         => 'main-menu',
+							'walker'          => new WP_Bootstrap_Navwalker(),
+						)
+					);
+				} ?>
 
 				<a href="<?php echo bloginfo('url'); ?>/free-assessment"><button type="button" class="btn btn-primary">
 FREE Instant Assessment</button></a><!-- .col-sm-12 col-md-6 -->

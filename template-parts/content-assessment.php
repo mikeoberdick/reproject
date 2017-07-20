@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class = "row">
 			<div class="col-sm-12 col-md-6">
-				<h3 id = "heroTitle" class = "mb-3">Are You Missing A Piece?</h3>
+				<h3 id = "heroTitle" class = "mb-3">How Resourceful Are You?</h3>
 				<p>Fill out our 10 question assessment to receive instant analysis on how effective resource management can help your project portfolio management practice today.</p>
 			</div><!-- .col-sm-12 -->
 

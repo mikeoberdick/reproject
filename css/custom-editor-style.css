@@ -9347,7 +9347,7 @@ body {
   .navbar #navbarNavDropdown {
     justify-content: flex-end; }
     .navbar #navbarNavDropdown a {
-      color: #205722; }
+      color: #404041; }
       .navbar #navbarNavDropdown a:hover {
         color: #8b1733;
         font-weight: bold; }
@@ -9378,7 +9378,10 @@ body {
   margin-bottom: 25px; }
 
 #homepage .heroWrapper {
-  padding: 50px; }
+  padding: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
   #homepage .heroWrapper .heroContent {
     display: flex;
     flex-direction: column;
@@ -9408,7 +9411,8 @@ body {
   #services .card .card-header {
     background-color: #205722; }
     #services .card .card-header h3 {
-      color: #ffffff; }
+      color: #ffffff;
+      font-weight: bold; }
   #services .card .card-block ul {
     list-style: none;
     padding-left: 0; }
