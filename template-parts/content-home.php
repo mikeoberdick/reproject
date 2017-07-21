@@ -12,13 +12,8 @@
 					</div><!-- .col-sm-12 col-md-6 -->
 
 					<div class="col-sm-12 col-md-5">
-						<a href="#" data-featherlight="#hpVideo" alt = "" title = ""><button type="button" class="learnMore btn btn-outline-primary btn-lg"><i class="fa fa-play-circle" aria-hidden="true"></i> Learn More</button></a>
-						<div id="hpVideo" class = "hidden">
-						<div class="embed-container">
-							<?php the_field('homepage_video'); ?>
-						</div>
-					</div>
-					</div><!-- .col-sm-12 col-md-6 -->
+						<a href="<?php the_field('homepage_video'); ?>" rel = "lightbox" alt = "" title = ""><button type="button" class="learnMore btn btn-outline-primary btn-lg"><i class="fa fa-play-circle" aria-hidden="true"></i> Learn More</button></a>
+					</div><!-- .col-sm-12 col-md-5 -->
 				</div><!-- .row -->
 			</div><!-- .col-sm-12 col-md-6 -->
 

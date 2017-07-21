@@ -62,7 +62,7 @@ body {
 			
 .btn-primary {
 	&:hover {
-	    background-color: lighten( $brand-primary, 10% ) !important;
+	    background-color: darken( $brand-primary, 10% ) !important;
 		border-color: $brand-primary !important;
    	}
   }
@@ -209,16 +209,48 @@ body {
 			text-align: center;
 		}
 	}
+
+	.embed-container { 
+			position: relative;
+			padding-bottom: 56.25%;
+			height: 0;
+			overflow: hidden;
+			max-width: 100%;
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		object {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;		
+		}
+	}
 }
 
 //SERVICES
 
 #services {
 	.card {
-		border-color: $brand-primary;
+		border-color: $brand-tertiary;
 
 		.card-header {
-			background-color: $brand-secondary;
+			background-color: $brand-tertiary;
 
 			h3 {
 				color: #ffffff;
@@ -340,7 +372,7 @@ body {
 }
 
 #bottomFooter {
-	background-color: $brand-secondary;
+	background-color: $brand-tertiary;
 	color: #fff;
 	padding-top: 25px;
 	padding-bottom: 25px;

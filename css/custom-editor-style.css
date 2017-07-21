@@ -9312,7 +9312,7 @@ body {
   border-radius: 5px; }
 
 .btn-primary:hover {
-  background-color: #b71e43 !important;
+  background-color: #5f1023 !important;
   border-color: #8b1733 !important; }
 
 /*------------------------------------------------*/
@@ -9403,10 +9403,35 @@ body {
     font-weight: bold;
     text-align: center; }
 
+#homepage .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+  #homepage .embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  #homepage .embed-container object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  #homepage .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
 #services .card {
-  border-color: #8b1733; }
+  border-color: #404041; }
   #services .card .card-header {
-    background-color: #205722; }
+    background-color: #404041; }
     #services .card .card-header h3 {
       color: #ffffff;
       font-weight: bold; }
@@ -9486,7 +9511,7 @@ body {
           text-decoration: none; }
 
 #bottomFooter {
-  background-color: #205722;
+  background-color: #404041;
   color: #fff;
   padding-top: 25px;
   padding-bottom: 25px; }
