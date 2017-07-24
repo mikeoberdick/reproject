@@ -25,6 +25,10 @@ get_header();
 					get_template_part( 'template-parts/content', 'home' );
 			}
 
+			else if( is_page( 'about' ) ) {
+					get_template_part( 'template-parts/content', 'about' );
+			}
+
 			else if( is_page( 'services' ) ) {
 					get_template_part( 'template-parts/content', 'services' );
 			}
@@ -35,6 +39,14 @@ get_header();
 
 			else if( is_page( 'client-log-in' ) ) {
 					get_template_part( 'template-parts/content', 'login' );
+			}
+
+			else if( is_page( 'contact' ) ) {
+					get_template_part( 'template-parts/content', 'contact' );
+			}
+
+			else if( is_page( 'partnerships' ) ) {
+					get_template_part( 'template-parts/content', 'partnerships' );
 			}
 
 			else {
