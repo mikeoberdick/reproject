@@ -51,7 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 
 			<div class="col-md-6 site-info text-right">
-				<a href="<?php echo bloginfo('url'); ?>/privacy">Privacy </a>|<a href="<?php echo bloginfo('url'); ?>/terms"> Terms</a>
+				<a href="<?php echo bloginfo('url'); ?>/privacy">Privacy </a>|<a href="<?php echo bloginfo('url'); ?>/terms-and-conditions"> Terms</a>
 			</div>
 		</div><!-- .row -->
 
