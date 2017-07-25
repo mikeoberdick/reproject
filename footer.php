@@ -43,25 +43,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<?php } ?>
 
-	<footer id = "bottomFooter" class = "site-footer container-fluid">
+<footer id = "bottomFooter" class = "container-fluid">
 		<div class="container">
 			<div class="row">
-			<div class="col-md-6 site-info">
-				<span>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></span>
-			</div>
+				
+				<div class="col-sm-12 text-center">
+				<h3>BE MORE RESOURCEFUL</h3>
+				<h5>&copy; <?php echo date('Y'); ?> </h5><img src = "<?php the_field('footer_logo', 'option'); ?>" alt = "<?php echo bloginfo('name'); ?>" title = "<?php echo bloginfo('name'); ?>">
+				<div class = "links">
+					<a href="<?php echo bloginfo('url'); ?>/privacy">Privacy </a>|<a href="<?php echo bloginfo('url'); ?>/terms-and-conditions"> Terms</a>
+				</div>
 
-			<div class="col-md-6 site-info text-right">
-				<a href="<?php echo bloginfo('url'); ?>/privacy">Privacy </a>|<a href="<?php echo bloginfo('url'); ?>/terms-and-conditions"> Terms</a>
-			</div>
+				<span class = "d-block mt-3 d4tw">Website by <a href = "http://www.designs4theweb.com">Designs 4 The Web</a></span>
+				</div>
 		</div><!-- .row -->
-
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<span class = "d-block mt-1 d4tw">Website by <a href = "http://www.designs4theweb.com">Designs 4 The Web</a></span>
-			</div>
-		</div><!-- .row -->
-		</div><!-- .container -->
-	</footer>
+	</div><!-- .container -->
+</footer>
 
 </div><!-- wrapper end -->
 
