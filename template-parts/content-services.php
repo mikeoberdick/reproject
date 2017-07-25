@@ -1,12 +1,29 @@
 <div id="services">
 	<div class="container">
-	<header class="entry-header">
-		<h1 class="entry-title">We Can Help You</h1>
-			<div>
-	    		<span class="titleSep"></span>
-			</div>
-	</header><!-- .entry-header -->
+		<header class="entry-header">
+			<h1 class="entry-title">Services</h1>
+				<div>
+		    		<span class="titleSep"></span>
+				</div>
+		</header><!-- .entry-header -->
 
+	<div class="row">
+		<div class="col-sm-12 col-md-6 mb-5">
+			<img src="http://via.placeholder.com/600x250?text=Services+Image" alt="Image"></img>
+		</div>
+		<div class="col-sm-12 col-md-6">
+			<p>ReProject provides you with data, direction, and support to make better resource decisions.  Decisions that will help you communicate with executives, complete that one big initiative, or implement an entire new practice.  It's what you've been searching for this whole time.</p>
+		<div class = "text-center">
+			<a href="#" data-featherlight="#servicesVideo" alt = "" title = ""><button type="button" class="learnMore btn btn-outline-primary btn-lg"><i class="fa fa-play-circle" aria-hidden="true"></i> Learn More</button></a>
+			
+			<div id="servicesVideo" class = "hidden">
+				Services Video Here
+			</div>
+		</div>
+		</div>
+	</div>
+
+	
 	
 
 		<div class = "row">
@@ -34,7 +51,7 @@
 				  </div>
 				  <div class="card-block">
 				    <h4 class="card-title text-center">DEMO Program</h4>
-				    <p class = "font-italic">A fast 2 week evaluation fo your Top 10 projects.</p>
+				    <p class = "font-italic">A fast 2 week evaluation of your Top 10 projects.</p>
 				    <p>
 				    	Step 1:  Initial project assessment <br />
 				    	Step 2:  Discover full resource capacity, constraints, and opportunities<br />
@@ -43,7 +60,7 @@
 					</p>
 					<p>Reports Include:</p>
 				   <ul>
-				 <li><i class="fa fa-check" aria-hidden="true"></i> Full Resource & Project Portfolio Management Analysis</li>
+				 <li><i class="fa fa-check" aria-hidden="true"></i> Top 10 Resource & Project Portfolio Management Analysis</li>
 				 <li><i class="fa fa-check" aria-hidden="true"></i> Heat Map Report</li>
 				 <li><i class="fa fa-check" aria-hidden="true"></i> Optimal Scenarios Report</li>
 				 <li><i class="fa fa-check" aria-hidden="true"></i> Possible Scenarios Report</li>
@@ -63,9 +80,8 @@
 				    <p class = "font-italic">A fully functioning resource and project portfolio management practice in 90 days.</p>
 				    <p>Includes entire demo program PLUS...</p>
 				   <ul>
-				   <li><i class="fa fa-check" aria-hidden="true"></i> Unlimited project amount</li>
-				   <li><i class="fa fa-check" aria-hidden="true"></i> Unlimited scenario playouts</li>
 				   <li><i class="fa fa-check" aria-hidden="true"></i> Full Project portfolio alignment</li>
+				   <li><i class="fa fa-check" aria-hidden="true"></i> Unlimited scenario playouts</li>
 				   <li><i class="fa fa-check" aria-hidden="true"></i> Resource pool development</li>
 				   <li><i class="fa fa-check" aria-hidden="true"></i> Resource pool analysis</li>
 				   <li><i class="fa fa-check" aria-hidden="true"></i> Tools ownerships</li>
@@ -84,15 +100,6 @@
 				  </div><!-- .card-block -->
 				</div><!-- .card -->
 			</div><!-- .col-md-4 -->
-		</div><!-- .row -->
-
-		<div class="row mt-5">
-			<div class="col-sm-12 text-center">
-				<a href="#" data-featherlight="#servicesVideo" alt = "" title = ""><button type="button" class="learnMore btn btn-outline-primary btn-lg"><i class="fa fa-play-circle" aria-hidden="true"></i> Learn More</button></a>
-					<div id="servicesVideo" class = "hidden">
-						Services Video Here
-					</div>
-			</div><!-- .col-sm-12 text-center -->
 		</div><!-- .row -->
 	</div><!-- .container -->
 </div><!-- #services -->
