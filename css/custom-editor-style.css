@@ -9430,8 +9430,10 @@ body {
     width: 100%;
     height: 100%; }
 
-#about .card-deck h5 {
-  color: black; }
+#about #aboutBios {
+  text-align: center; }
+  #about #aboutBios h5 {
+    color: black; }
 
 #services .card {
   border-color: #404041; }
