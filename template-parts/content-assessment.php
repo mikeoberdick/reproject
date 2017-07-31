@@ -14,7 +14,7 @@
 			</div><!-- .col-sm-12 col-md-6 -->
 				
 			<div class="col-sm-12 col-md-6">
-				<img src="<?php echo $image['url']; ?>" alt="Hero Image">
+				<img src="<?php echo $image['url']; ?>" alt="Assessment Hero Image">
 			</div><!-- .col-sm-12 col-md-6 -->
 		</div><!-- .row -->
 	</div><!-- .container -->
