@@ -48,7 +48,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="row">
 				
 				<div class="col-sm-12 text-center">
-				<h3>BE MORE RESOURCEFUL</h3>
 				<h5>&copy; <?php echo date('Y'); ?> </h5><img src = "<?php the_field('footer_logo', 'option'); ?>" alt = "<?php echo bloginfo('name'); ?>" title = "<?php echo bloginfo('name'); ?>">
 				<div class = "links">
 					<a href="<?php echo bloginfo('url'); ?>/privacy">Privacy </a>|<a href="<?php echo bloginfo('url'); ?>/terms-and-conditions"> Terms</a>

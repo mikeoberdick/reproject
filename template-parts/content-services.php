@@ -8,9 +8,6 @@
 		</header><!-- .entry-header -->
 
 	<div class="row">
-		<div class="col-sm-12 col-md-6 mb-5">
-			<img src="http://via.placeholder.com/600x250?text=Services+Image" alt="Image"></img>
-		</div>
 		<div class="col-sm-12 col-md-6">
 			<p>ReProject provides you with data, direction, and support to make better resource decisions.  Decisions that will help you communicate with executives, complete that one big initiative, or implement an entire new practice.  It's what you've been searching for this whole time.</p>
 		<div class = "text-center">
@@ -21,7 +18,12 @@
 			</div>
 		</div>
 		</div>
-	</div>
+
+		<div class="col-sm-12 col-md-6 mb-5">
+			<?php $image = get_field('hero_image'); ?>
+			<img src="<?php echo $image['url']; ?>" alt="Hero Image">
+		</div>
+	</div><!-- .row -->
 
 	
 	
