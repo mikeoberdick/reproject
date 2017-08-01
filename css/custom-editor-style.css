@@ -9430,10 +9430,11 @@ body {
     width: 100%;
     height: 100%; }
 
-#about #aboutBios {
-  text-align: center; }
-  #about #aboutBios h5 {
-    color: black; }
+#about #aboutBios h5 {
+  color: black; }
+
+#about #aboutBios .bio {
+  margin-bottom: 3rem; }
 
 #services .card {
   border-color: #404041; }
@@ -9462,6 +9463,26 @@ body {
   font-size: 12px; }
   #freeAssessment #privacyNote span {
     color: red; }
+
+#contact #contactInfo {
+  color: #000;
+  font-size: 24px; }
+  #contact #contactInfo a {
+    font-size: 24px;
+    color: #000; }
+    #contact #contactInfo a:hover {
+      text-decoration: none; }
+  #contact #contactInfo img {
+    width: 50px;
+    margin-right: 15px; }
+  #contact #contactInfo #map img {
+    float: left; }
+
+#contact .acf-map {
+  width: 100%;
+  height: 400px;
+  border: #ccc solid 1px;
+  margin: 20px 0; }
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
