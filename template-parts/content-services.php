@@ -8,25 +8,22 @@
 		</header><!-- .entry-header -->
 
 	<div class="row">
-		<div class="col-sm-12 col-md-6">
-			<p>ReProject provides you with data, direction, and support to make better resource decisions.  Decisions that will help you communicate with executives, complete that one big initiative, or implement an entire new practice.  It's what you've been searching for this whole time.</p>
-		<div class = "text-center">
-			<a href="#" data-featherlight="#servicesVideo" alt = "" title = ""><button type="button" class="learnMore btn btn-outline-primary btn-lg"><i class="fa fa-play-circle" aria-hidden="true"></i> Learn More</button></a>
-			
-			<div id="servicesVideo" class = "hidden">
-				Services Video Here
-			</div>
-		</div>
-		</div>
-
 		<div class="col-sm-12 col-md-6 mb-5">
 			<?php $image = get_field('hero_image'); ?>
 			<img src="<?php echo $image['url']; ?>" alt="Hero Image">
 		</div>
+		
+		<div class="col-sm-12 col-md-6">
+			<p>ReProject provides you with data, direction, and support to make better resource decisions.  Decisions that will help you communicate with executives, complete that one big initiative, or implement an entire new practice.  It's what you've been searching for this whole time.</p>
+			<div class = "text-center">
+				<a href="#" data-featherlight="#servicesVideo" alt = "" title = ""><button type="button" class="learnMore btn btn-outline-primary btn-lg mt-5"><i class="fa fa-play-circle" aria-hidden="true"></i> Learn More</button></a>
+				
+				<div id="servicesVideo" class = "hidden">
+					Services Video Here
+				</div>
+			</div>
+		</div>
 	</div><!-- .row -->
-
-	
-	
 
 		<div class = "row">
 			<div class="col-sm-12 col-md-4">
