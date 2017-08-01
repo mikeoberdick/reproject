@@ -9,13 +9,15 @@
 	</header><!-- .entry-header -->
 	
 		<div class = "row">
-			<div id = "contactInfo" class="col-sm-12 col-md-6">
+			<div id = "contactInfo" class="col-sm-12 col-md-6 mt-3">
+
+			<div id = "map" class = "mb-3">
+				<img src="<?php echo get_stylesheet_directory_uri() . '/img/map.png';?>"><?php the_field('address_1', 'options'); ?><br /><?php the_field('address_2', 'options'); ?>
+			</div>
+
 				<div id = "phone" class = "mb-3"><img src="<?php echo get_stylesheet_directory_uri() . '/img/phone.png';?>"><a href="tel:<?php the_field('phone', 'option'); ?>" alt = "Call ReProject" title = "Call ReProject"><?php the_field('phone', 'options'); ?></a></div>
 
-				<div id = "email" class = "mb-3"><img src="<?php echo get_stylesheet_directory_uri() . '/img/mail.png';?>"><a href="mailto:<?php the_field('e-mail', 'option'); ?>" alt = "E-Mail ReProject" title = "E-Mail ReProject"><?php the_field('email', 'options'); ?></a></div>
-
-				<div id = "map"><img src="<?php echo get_stylesheet_directory_uri() . '/img/map.png';?>"><?php the_field('address_1', 'options'); ?><br /><?php the_field('address_2', 'options'); ?></div>
-
+				<div id = "email"><img src="<?php echo get_stylesheet_directory_uri() . '/img/mail.png';?>"><a href="mailto:<?php the_field('e-mail', 'option'); ?>" alt = "E-Mail ReProject" title = "E-Mail ReProject"><?php the_field('email', 'options'); ?></a></div>
 			</div><!-- .col-md-6 -->
 			
 			<div class="col-sm-12 col-md-6">

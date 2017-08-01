@@ -15,7 +15,7 @@ $martin = get_field('martin_headshot');
 $barry = get_field('barry_headshot');
 ?>
 
-<div id = "aboutBios">
+<div id = "aboutBios" class = "mt-5">
 
 <div class = "bio row">
 	<div class="col-sm-12 col-md-4">
