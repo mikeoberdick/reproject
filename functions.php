@@ -26,6 +26,11 @@ require get_stylesheet_directory() . '/inc/acf.php';
 require get_stylesheet_directory() . '/inc/menus.php';
 
 /**
+ * Template Tags
+ */
+require get_stylesheet_directory() . '/inc/template-tags.php';
+
+/**
  * Woocommerce
  */
 require get_stylesheet_directory() . '/inc/woocommerce.php';

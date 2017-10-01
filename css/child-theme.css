@@ -9464,6 +9464,12 @@ body {
   #freeAssessment #privacyNote span {
     color: red; }
 
+.blog .entry-title, .single .entry-title {
+  text-align: left; }
+
+.blog .entry-header, .single .entry-header {
+  margin-bottom: 1em; }
+
 #contact #contactInfo {
   color: #000;
   font-size: 24px; }
