@@ -45,9 +45,9 @@ get_header();
 					get_template_part( 'template-parts/content', 'contact' );
 			}
 
-			else if( is_page( 'partnerships' ) ) {
-					get_template_part( 'template-parts/content', 'partnerships' );
-			}
+			//else if( is_page( 'partnerships' ) ) {
+			//		get_template_part( 'template-parts/content', 'partnerships' );
+			//}
 
 			else {
 			   get_template_part( 'loop-templates/content', 'page' );
