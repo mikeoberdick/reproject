@@ -297,6 +297,40 @@ body {
 	}
 }
 
+#partnerships {
+	.card {
+	border-color: $brand-tertiary;
+
+	.card-header {
+		background-color: $brand-tertiary;
+
+		h3 {
+			color: #ffffff;
+			font-weight: bold;
+		}
+	}
+
+	.card-block {
+		ul {
+			list-style: none;
+			padding-left: 0;
+
+			li {
+				margin-bottom: 10px;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+
+				i {
+					color: $brand-secondary;
+					}
+				}
+			}
+		}
+	}
+}
+
 //FREE ASSESSMENT
 
 #freeAssessment {
