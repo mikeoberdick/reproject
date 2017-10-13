@@ -9453,6 +9453,23 @@ body {
       #services .card .card-block ul li i {
         color: #205722; }
 
+#partnerships .card {
+  border-color: #404041; }
+  #partnerships .card .card-header {
+    background-color: #404041; }
+    #partnerships .card .card-header h3 {
+      color: #ffffff;
+      font-weight: bold; }
+  #partnerships .card .card-block ul {
+    list-style: none;
+    padding-left: 0; }
+    #partnerships .card .card-block ul li {
+      margin-bottom: 10px; }
+      #partnerships .card .card-block ul li:last-of-type {
+        margin-bottom: 0; }
+      #partnerships .card .card-block ul li i {
+        color: #205722; }
+
 #freeAssessment .heroWrapper {
   min-height: 350px;
   padding-top: 50px;
