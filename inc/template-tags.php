@@ -12,18 +12,13 @@ function d4tw_posted_on() {
 	echo '<span class="byline">Posted on ' . get_the_date() . ' by ' . get_the_author() . '</span>'; // WPCS: XSS OK.
 }
 
-if ( ! function_exists( 'all_excerpts_get_more_link' ) ) {
-	/**
-	 * Adds a custom read more link to all excerpts, manually or automatically generated
-	 *
-	 * @param string $post_excerpt Posts's excerpt.
-	 *
-	 * @return string
-	 */
-	function all_excerpts_get_more_link( $post_excerpt ) {
+function d4tw_excerpt_length( $length ) {
+        return 30;
+    }
+    add_filter( 'excerpt_length', 'd4tw_excerpt_length', 999 );
 
-		return $post_excerpt . ' [...]<p><a class="btn btn-primary understrap-read-more-link" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More...',
-		'understrap' ) . '</a></p>';
+function understrap_all_excerpts_get_more_link( $post_excerpt ) {
+
+		return $post_excerpt . '...';
 	}
-}
-add_filter( 'wp_trim_excerpt', 'all_excerpts_get_more_link' );
+add_filter( 'wp_trim_excerpt', 'understrap_all_excerpts_get_more_link' );

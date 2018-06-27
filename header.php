@@ -38,13 +38,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="container">
 			<div class="row headerArea">
 
-				<div class="col-sm-12 col-md-3 logoContainer">
+				<div class="col-sm-12 col-md-4 logoContainer">
 					<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name') ); ?>"><img id = "headerLogo" src = "<?php the_field('logo', 'option'); ?>"></a>
 				</div><!-- logo -->
 
-				<div class="col-sm-12 col-md-9">
+				<div class="col-sm-12 col-md-8">
 
-					<div class="utilityHeader mt-3 mb-3 text-right hidden-md-down">
+					<div class="utilityHeader mt-3 mb-3">
 						<a href="<?php echo bloginfo('url'); ?>/contact">Contact</a> |
 						<a href="<?php echo bloginfo('url'); ?>/about">About</a> |
 						<a href="<?php echo bloginfo('url'); ?>/partnerships">Partnerships</a><br />
@@ -57,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
 
-		<nav class="navbar navbar-toggleable-md">
+		<nav class="navbar navbar-toggleable-sm">
 
 			<!-- <div class="container"> -->
 
@@ -74,7 +74,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							'menu_class'      => 'navbar-nav',
 							'fallback_cb'     => '',
 							'menu_id'         => 'main-menu',
-							'walker'          => new WP_Bootstrap_Navwalker(),
+							'walker'          => new understrap_WP_Bootstrap_Navwalker(),
 						)
 					);
 				}
@@ -88,13 +88,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 							'menu_class'      => 'navbar-nav',
 							'fallback_cb'     => '',
 							'menu_id'         => 'main-menu',
-							'walker'          => new WP_Bootstrap_Navwalker(),
+							'walker'          => new understrap_WP_Bootstrap_Navwalker(),
 						)
 					);
 				} ?>
 
 				<a href="<?php echo bloginfo('url'); ?>/free-assessment"><button type="button" class="btn btn-primary">
-FREE Instant Assessment</button></a><!-- .col-sm-12 col-md-6 -->
+FREE Assessment</button></a><!-- .col-sm-12 col-md-6 -->
 			</nav><!-- .site-navigation -->
 	</div><!-- .wrapper-navbar end -->
 

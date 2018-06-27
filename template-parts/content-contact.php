@@ -17,7 +17,7 @@
 
 				<div id = "phone" class = "mb-3"><img src="<?php echo get_stylesheet_directory_uri() . '/img/phone.png';?>"><a href="tel:<?php the_field('phone', 'option'); ?>" alt = "Call ReProject" title = "Call ReProject"><?php the_field('phone', 'options'); ?></a></div>
 
-				<div id = "email"><img src="<?php echo get_stylesheet_directory_uri() . '/img/mail.png';?>"><a href="mailto:<?php the_field('e-mail', 'option'); ?>" alt = "E-Mail ReProject" title = "E-Mail ReProject"><?php the_field('email', 'options'); ?></a></div>
+				<div id = "email"><img src="<?php echo get_stylesheet_directory_uri() . '/img/mail.png';?>"><a href="mailto:<?php the_field('email', 'option'); ?>" alt = "E-Mail ReProject" title = "E-Mail ReProject"><?php the_field('email', 'options'); ?></a></div>
 			</div><!-- .col-md-6 -->
 			
 			<div class="col-sm-12 col-md-6">

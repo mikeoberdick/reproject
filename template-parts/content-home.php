@@ -8,7 +8,7 @@
 
 				<div class="row heroButtons">
 					<div class="col-sm-12 col-md-7">
-					<a href = '<?php echo bloginfo('url'); ?>/free-assessment' alt = "Free Instant Assessment" title = "Free Instant Assessment"><button type="button" class="btn btn-primary btn-lg">FREE Instant Assessment</button></a>
+					<a href = '<?php echo bloginfo('url'); ?>/free-assessment' alt = "Free Assessment" title = "Free Assessment"><button type="button" id = "heroAssessment" class="btn btn-primary btn-lg">FREE Assessment</button></a>
 					</div><!-- .col-sm-12 col-md-6 -->
 
 					<div class="col-sm-12 col-md-5">
@@ -32,23 +32,23 @@
 			<div class="col-sm-12 col-md-4 d-flex">
 				<div class="hpCard">
 					<h3 class = "mb-3">In A Time Crunch</h3>
-					<img class =  "w-50 d-block mx-auto d-block mx-auto mb-3" src = "<?php the_field('icon_1'); ?>" />
-					<p>ReProject will save you time by keeping projects on schedule, streamlining business unit handoffs, and reducing surprise bottlenecks.</p>
+					<img class =  "w-50 mb-3" src = "<?php the_field('icon_1'); ?>" />
+					<p c>ReProject will save you time by keeping projects on schedule, streamlining business unit handoffs, and reducing surprise bottlenecks.</p>
 				</div><!-- .hpCard -->
 			</div><!-- .col-sm-12 col-md-4 -->
 
 			<div class="col-sm-12 col-md-4 d-flex">
 				<div class="hpCard">
 					<h3 class = "mb-3">On A Tight Budget</h3>
-					<img class =  "w-50 d-block mx-auto mb-3" src = "<?php the_field('icon_2'); ?>" />
-					<p>ReProject will save you money by not introducing new software, meaning no IT dirty work, or forced user adoption.</p>
+					<img class =  "w-50 mb-3" src = "<?php the_field('icon_2'); ?>" />
+					<p>ReProject will save you money by not introducing new software; meaning no IT dirty work, or forced user adoption.</p>
 				</div><!-- .hpCard -->
 			</div><!-- .col-sm-12 col-md-4 -->
 
 			<div class="col-sm-12 col-md-4 d-flex">
 				<div class="hpCard">
 					<h3 class = "mb-3">Under Pressure</h3>
-					<img class =  "w-50 d-block mx-auto mb-3" src = "<?php the_field('icon_3'); ?>" />
+					<img class =  "w-50 mb-3" src = "<?php the_field('icon_3'); ?>" />
 					<p>ReProject will save you face by rescuing existing investments, predicting resource issues, and clearing path for high priorities.</p>
 				</div><!-- .hpCard -->
 			</div><!-- .col-sm-12 col-md-4 -->

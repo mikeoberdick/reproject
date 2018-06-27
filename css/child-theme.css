@@ -9245,13 +9245,13 @@ Template:    Understrap
 /*-------------------[FONTS]----------------------*/
 /*------------------------------------------------*/
 html {
-  font-size: 14px; }
+  font-size: 12px; }
   @media screen and (min-width: 320px) {
     html {
-      font-size: calc(14px + 4 * ((100vw - 320px) / 880)); } }
+      font-size: calc(12px + 4 * ((100vw - 320px) / 880)); } }
   @media screen and (min-width: 1200px) {
     html {
-      font-size: 18px; } }
+      font-size: 16px; } }
 
 h1, h2, h3, h4, h5 {
   color: #8b1733;
@@ -9260,35 +9260,35 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 2.0736rem; }
   h1 {
-    font-size: 24.192px; }
+    font-size: 20.736px; }
     @media screen and (min-width: 320px) {
       h1 {
-        font-size: calc(24.192px + 23.058 * ((100vw - 320px) / 880)); } }
+        font-size: calc(20.736px + 19.764 * ((100vw - 320px) / 880)); } }
     @media screen and (min-width: 1200px) {
       h1 {
-        font-size: 47.25px; } }
+        font-size: 40.5px; } }
 
 h2 {
   font-size: 1.728rem; }
   h2 {
-    font-size: 24.192px; }
+    font-size: 20.736px; }
     @media screen and (min-width: 320px) {
       h2 {
-        font-size: calc(24.192px + 23.058 * ((100vw - 320px) / 880)); } }
+        font-size: calc(20.736px + 19.764 * ((100vw - 320px) / 880)); } }
     @media screen and (min-width: 1200px) {
       h2 {
-        font-size: 47.25px; } }
+        font-size: 40.5px; } }
 
 h3 {
   font-size: 1.44rem; }
   h3 {
-    font-size: 20.16px; }
+    font-size: 17.28px; }
     @media screen and (min-width: 320px) {
       h3 {
-        font-size: calc(20.16px + 11.34 * ((100vw - 320px) / 880)); } }
+        font-size: calc(17.28px + 9.72 * ((100vw - 320px) / 880)); } }
     @media screen and (min-width: 1200px) {
       h3 {
-        font-size: 31.5px; } }
+        font-size: 27px; } }
 
 body {
   color: #404041;
@@ -9328,9 +9328,24 @@ body {
     align-items: center; }
     #headerWrap .headerArea .logoContainer {
       align-self: flex-end; }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  #headerWrap .headerArea .logoContainer #headerLogo {
+    max-width: 250px; } }
+      @media (max-width: 575px) {
+        #headerWrap .headerArea .logoContainer #headerLogo {
+          max-width: 200px; } }
+      @media (max-width: 991px) {
+        #headerWrap .headerArea .logoContainer #headerLogo {
+          display: block;
+          margin: 0 auto; } }
     #headerWrap .headerArea .utilityHeader {
       color: #000000;
-      font-size: 12px; }
+      font-size: 12px;
+      text-align: right; }
+      @media (max-width: 767px) {
+        #headerWrap .headerArea .utilityHeader {
+          text-align: center; } }
       #headerWrap .headerArea .utilityHeader a {
         color: #000000;
         font-size: 12px; }
@@ -9344,6 +9359,9 @@ body {
 /*------------------------------------------------*/
 .navbar {
   padding: 0; }
+  @media (max-width: 991px) {
+    .navbar {
+      align-items: center; } }
   .navbar #navbarNavDropdown {
     justify-content: flex-end; }
     .navbar #navbarNavDropdown a {
@@ -9357,10 +9375,27 @@ body {
     .navbar #navbarNavDropdown .current_page_parent a {
       color: #8b1733;
       font-weight: bold; }
-  .navbar button {
-    margin-left: 10px; }
+  @media (min-width: 992px) {
+    .navbar button {
+      margin-left: 10px; } }
+  @media (max-width: 991px) {
+    .navbar .navbar-toggler {
+      align-self: center;
+      margin-bottom: 1rem; } }
   .navbar .mobileToggle {
     color: #8b1733; }
+
+/*------------------------------------------------*/
+/*----------------------[IMAGES]------------------*/
+/*------------------------------------------------*/
+.aligncenter {
+  display: block; }
+
+.wp-caption-text {
+  color: #8b1733;
+  font-style: italic;
+  text-align: center;
+  margin-top: 1rem; }
 
 /*------------------------------------------------*/
 /*----------------------[PAGES]-------------------*/
@@ -9384,6 +9419,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
+  @media (max-width: 991px) {
+    #homepage .heroWrapper {
+      padding: 15px; } }
   #homepage .heroWrapper .heroContent {
     display: flex;
     flex-direction: column;
@@ -9394,16 +9432,22 @@ body {
       width: 100%;
       padding-left: .5rem;
       padding-right: .5rem; }
+    @media (max-width: 767px) {
+      #homepage .heroWrapper .heroContent .heroButtons #heroAssessment {
+        margin-bottom: 1rem; } }
 
 #homepage .hpCardTitle h3 {
   color: black;
   text-align: center; }
 
 #homepage .hpCard {
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   #homepage .hpCard h3 {
-    font-weight: bold;
-    text-align: center; }
+    font-weight: bold; }
+  @media (max-width: 991px) {
+    #homepage .hpCard img {
+      width: 35%; } }
 
 #homepage .embed-container {
   position: relative;
@@ -9435,40 +9479,45 @@ body {
 
 #about #aboutBios .bio {
   margin-bottom: 3rem; }
+  @media (max-width: 991px) {
+    #about #aboutBios .bio:nth-of-type(even) .story {
+      order: 1; } }
+  #about #aboutBios .bio:nth-of-type(odd) {
+    text-align: right; }
 
-#services .card {
-  border-color: #404041; }
-  #services .card .card-header {
-    background-color: #404041; }
-    #services .card .card-header h3 {
-      color: #ffffff;
-      font-weight: bold; }
-  #services .card .card-block ul {
-    list-style: none;
-    padding-left: 0; }
-    #services .card .card-block ul li {
-      margin-bottom: 10px; }
-      #services .card .card-block ul li:last-of-type {
-        margin-bottom: 0; }
-      #services .card .card-block ul li i {
-        color: #205722; }
+@media (min-width: 576px) and (max-width: 767px) {
+  #about #aboutBios .bio .bioImage {
+    max-width: 200px; } }
+  @media (max-width: 991px) {
+    #about #aboutBios .bio .bioImage {
+      max-width: 250px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 1rem; }
+      #about #aboutBios .bio .bioImage:nth-of-type(even) img {
+        order: 0; } }
 
-#partnerships .card {
-  border-color: #404041; }
-  #partnerships .card .card-header {
-    background-color: #404041; }
-    #partnerships .card .card-header h3 {
-      color: #ffffff;
-      font-weight: bold; }
-  #partnerships .card .card-block ul {
-    list-style: none;
-    padding-left: 0; }
-    #partnerships .card .card-block ul li {
-      margin-bottom: 10px; }
-      #partnerships .card .card-block ul li:last-of-type {
-        margin-bottom: 0; }
-      #partnerships .card .card-block ul li i {
-        color: #205722; }
+@media (max-width: 991px) {
+  #services .card, #partnerships .card {
+    margin-bottom: 1rem; } }
+
+#services .card .card-block ul, #partnerships .card .card-block ul {
+  list-style: none;
+  padding-left: 0; }
+  #services .card .card-block ul li, #partnerships .card .card-block ul li {
+    margin-bottom: 10px; }
+    #services .card .card-block ul li:last-of-type, #partnerships .card .card-block ul li:last-of-type {
+      margin-bottom: 0; }
+    #services .card .card-block ul li i, #partnerships .card .card-block ul li i {
+      color: #205722; }
+
+#testimonials #featuredTestimonials .testimonial {
+  text-align: center; }
+  @media (min-width: 768px) {
+    #testimonials #featuredTestimonials .testimonial:nth-of-type(odd) {
+      text-align: right; } }
+  #testimonials #featuredTestimonials .testimonial .testimonialLogo {
+    max-height: 50px; }
 
 #freeAssessment .heroWrapper {
   min-height: 350px;
@@ -9476,10 +9525,11 @@ body {
   background-size: cover;
   background-position: right bottom; }
 
-#freeAssessment #privacyNote {
+#freeAssessment .privacyNote {
   font-size: 12px; }
-  #freeAssessment #privacyNote span {
-    color: red; }
+
+.blog .brick {
+  padding: 25px; }
 
 .blog .entry-title, .single .entry-title {
   text-align: left; }
@@ -9568,11 +9618,12 @@ body {
           text-decoration: none; }
 
 #bottomFooter {
-  background-image: url(https://image.freepik.com/free-vector/background-with-gray-texture_1048-5175.jpg);
   color: #000000;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  font-size: 12px; }
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 12px;
+  background-color: #dadada;
+  box-shadow: inset 0 15px 5px -16px #111; }
   #bottomFooter h3, #bottomFooter h5 {
     color: #000000; }
   #bottomFooter h5 {

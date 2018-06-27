@@ -28,3 +28,9 @@ function theme_enqueue_styles() {
 
 //Allow Text widgets to execute shortcodes
 add_filter('widget_text', 'do_shortcode');
+
+// Add the testimonial image thumbnail size
+add_action( 'after_setup_theme', 'testimonial_pic' );
+function testimonial_pic() {
+    add_image_size( 'testimonial-thumb', 200, 200, array( 'center', 'top' ) );
+}

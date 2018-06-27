@@ -20,9 +20,9 @@
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+<!-- 	<img class = "mx-auto d-block" src="<?php the_post_thumbnail_url( 'large' ); ?> "> -->
 
-	<div class="entry-content">
+	<div class="entry-content mt-5">
 
 		<?php the_content(); ?>
 

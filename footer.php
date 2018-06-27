@@ -53,7 +53,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<a href="<?php echo bloginfo('url'); ?>/privacy">Privacy </a>|<a href="<?php echo bloginfo('url'); ?>/terms-and-conditions"> Terms</a>
 				</div>
 
-				<span class = "d-block mt-3 d4tw">Website by <a href = "http://www.designs4theweb.com">Designs 4 The Web</a></span>
+				<span class = "d-block mt-2 d4tw">Website by <a href = "http://www.designs4theweb.com">Designs 4 The Web</a></span>
 				</div>
 		</div><!-- .row -->
 	</div><!-- .container -->
